@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yosua Works - Gen-Z Photography Studio</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='4' y='12' width='24' height='16' rx='2' fill='none' stroke='%23ff6b6b' stroke-width='2'/%3E%3Ccircle cx='16' cy='20' r='4' fill='none' stroke='%234ecdc4' stroke-width='2'/%3E%3Crect x='12' y='8' width='8' height='4' rx='1' fill='%23ff6b6b'/%3E%3C/svg%3E">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading" id="loading">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+
+                <div class="nav-links">
+                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#hasil-kamera" class="nav-link">Hasil Kamera</a>
+                    <a href="#kontak" class="nav-link">Kontak</a>
+                </div>
+                <button id="mobile-menu-btn" class="mobile-menu-btn">
+                    <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+            <div id="mobile-menu" class="mobile-menu">
+                <a href="#home" class="mobile-link">Home</a>
+                <a href="#hasil-kamera" class="mobile-link">Hasil Kamera</a>
+                <a href="#kontak" class="mobile-link">Kontak</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="hero-content">
+
+                <h1 class="hero-title">
+                </h1>
+                <p class="hero-subtitle">
+                    Capturing moments with Gen-Z vibes ✨<br>
+                    No cap, we make your memories iconic! 📷
+                </p>
+                <button class="cta-button" onclick="scrollToSection('kontak')">
+                    Let's Create Magic! 🚀
+                </button>
+            </div>
+
+            <!-- Stats Section -->
+            <div class="stats-section">
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-icon">🏆</div>
+                        <h3 class="stat-number" data-target="0">0</h3>
+                        <p class="stat-label">Awards Won</p>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-icon">📸</div>
+                        <h3 class="stat-number" data-target="30">0</h3>
+                        <p class="stat-label">Happy Clients</p>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-icon">⭐</div>
+                        <h3 class="stat-number" data-target="5">0</h3>
+                        <p class="stat-label">Rating Average</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hasil Kamera Section -->
+    <section id="hasil-kamera" class="gallery-section">
+        <div class="container">
+            <h2 class="section-title">
+                📷 Hasil Kamera Kita
+            </h2>
+            
+            <!-- Elegant Card Boxes -->
+            <div class="gallery-cards">
+                <a href="https://drive.google.com/drive/folders/1nj-1Pk7ntFDY_UcGC5Z48Wr5i3UfDqqY?usp=sharing" target="_blank" class="gallery-card portrait-card">
+                    <div class="card-header">
+                        <div class="card-icon">👤</div>
+                        <div class="card-badge">Portrait</div>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Portrait Session</h3>
+                        <p class="card-description">Professional portrait photography dengan vibe aesthetic yang stunning!</p>
+                        <div class="card-stats">
+                            <span class="stat">📸 40+ Photos</span>
+                            <span class="stat">⭐ Premium</span>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <span class="view-text">View Gallery</span>
+                        <div class="arrow-icon">→</div>
+                    </div>
+                </a>
+
+                <a href="https://drive.google.com/drive/folders/1xOTqjXP5z0gHRUqMlSxCZthxXxS32hmH?usp=sharing" target="_blank" class="gallery-card event-card">
+                    <div class="card-header">
+                        <div class="card-icon">🎓</div>
+                        <div class="card-badge">School</div>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">School Shoot</h3>
+                        <p class="card-description">Dokumentasi kegiatan sekolah dan acara pendidikan dengan profesional!</p>
+                        <div class="card-stats">
+                            <span class="stat">📸 50+ Photos</span>
+                            <span class="stat">🔥 Trending</span>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <span class="view-text">View Gallery</span>
+                        <div class="arrow-icon">→</div>
+                    </div>
+                </a>
+
+                <a href="https://drive.google.com/drive/folders/143qcxMKdUg6EUGtkj-d6OFazkoFk4zSR?usp=sharing" target="_blank" class="gallery-card fashion-card">
+                    <div class="card-header">
+                        <div class="card-icon">✨</div>
+                        <div class="card-badge">Fashion</div>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Fashion Shoot</h3>
+                        <p class="card-description">Fashion photography dengan konsep kreatif dan style yang trendy!</p>
+                        <div class="card-stats">
+                            <span class="stat">📸 10+ Photos</span>
+                            <span class="stat">✨ Creative</span>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <span class="view-text">View Gallery</span>
+                        <div class="arrow-icon">→</div>
+                    </div>
+                </a>
+
+                <a href="https://drive.google.com/drive/folders/1VaPrXU8jC2hNvQDSes5AxsacHmcbl_Cn?usp=sharing" target="_blank" class="gallery-card holy-card">
+                    <div class="card-header">
+                        <div class="card-icon">⛪</div>
+                        <div class="card-badge">Holy Mass</div>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Holy Mass</h3>
+                        <p class="card-description">Dokumentasi misa kudus dan acara keagamaan dengan penuh khidmat!</p>
+                        <div class="card-stats">
+                            <span class="stat">📸 30+ Photos</span>
+                            <span class="stat">🙏 Sacred</span>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <span class="view-text">View Gallery</span>
+                        <div class="arrow-icon">→</div>
+                    </div>
+                </a>
+
+                <a href="https://drive.google.com/drive/folders/1pDV9hf_Aq1ZkPN8y_asY5uZADUa2c5_8?usp=sharing" target="_blank" class="gallery-card all-card">
+                    <div class="card-header">
+                        <div class="card-icon">📸</div>
+                        <div class="card-badge">All Collections</div>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Complete Gallery</h3>
+                        <p class="card-description">Semua koleksi foto terbaik kami dalam satu tempat. No cap, semuanya fire!</p>
+                        <div class="card-stats">
+                            <span class="stat">📸 100+ Photos</span>
+                            <span class="stat">🔥 All Access</span>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <span class="view-text">View All</span>
+                        <div class="arrow-icon">→</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kontak Section -->
+    <section id="kontak" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">
+                📞 Hit Us Up!
+            </h2>
+            
+            <div class="contact-content">
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">📱</div>
+                        <div class="contact-details">
+                            <h3>WhatsApp</h3>
+                            <p>+62 851-2947-0733 </p>
+                            <span>Slide into our DMs!</span>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">📧</div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <p>hello@yosuastudio.my.id</p>
+                            <span>For business inquiries</span>
+                        </div>
+                    </div>
+
+
+
+                    <div class="contact-item">
+                        <div class="contact-icon">📸</div>
+                        <div class="contact-details">
+                            <h3>Instagram</h3>
+                            <p>@yosuaworks</p>
+                            <span>Follow for daily content!</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form">
+                    <h3 class="form-title">Let's Collab! 🤝</h3>
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <label>Nama Kamu</label>
+                            <input type="text" name="name" placeholder="Siapa nih?" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input type="email" name="email" placeholder="your@email.com" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>Jenis Project</label>
+                            <select name="project" required>
+                                <option value="">Pilih jenis project...</option>
+                                <option value="portrait">Portrait Session</option>
+                                <option value="event">Event Coverage</option>
+                                <option value="fashion">Fashion Photography</option>
+                                <option value="product">Product Photography</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>Ceritain Project Kamu</label>
+                            <textarea name="message" rows="4" placeholder="Spill the tea about your project..." required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">
+                            Send Message 🚀
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+
+                <p class="footer-text">
+                    Making memories iconic since 2024  ✨<br>
+                    No cap, we're the best in the game! 💯
+                </p>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/yosua.works/" target="_blank" title="Instagram">📸</a>
+                    <a href="mailto:hello@yosuastudio.my.id" title="Email">💌</a>
+                    <a href="https://www.youtube.com/@YosuaChristianWijaya" target="_blank" title="YouTube">🎵</a>
+                </div>
+                <p class="copyright">
+                    © 2025 Yosua Works. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'96ccb4d232948491',t:'MTc1NDc5OTY4NS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
